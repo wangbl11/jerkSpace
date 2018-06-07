@@ -1,0 +1,19 @@
+version: '2'
+services:
+    jerkspace-app:
+        image: jerkspace
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://jerkspace-mysql:3306/jerkspace?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=jerkspace-elasticsearch:9300
+        ports:
+            - 8080:8080
+    jerkspace-mysql:
+        extends:
+            file: mysql.yml
+            service: jerkspace-mysql
+    jerkspace-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: jerkspace-elasticsearch

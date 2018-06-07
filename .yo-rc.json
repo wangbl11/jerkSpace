@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitHubOrganization": "wangbl11",
+    "baseName": "jerkSpace",
+    "packageName": "com.guoyi.jerkspace",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "session",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "testFrameworks": [
+      "gatling",
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "zh-cn",
+      "zh-tw",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhipsterVersion": "4.14.4",
+    "packageFolder": "com/guoyi/jerkspace",
+    "rememberMeKey": "0f3790a9cf1171381d0db65ccad769084ebd6c02",
+    "jhiPrefix": "jhi"
+  }
+}
