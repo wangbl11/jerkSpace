@@ -1,0 +1,9 @@
+entity Setting {
+	name String required maxlength(100),
+	type SettingTypeEnum required ,
+	value String required maxlength(200),
+	defvalue String required maxlength(200),
+	createdDate ZonedDateTime required,
+	modifiedDate ZonedDateTime
+}
+paginate Tag with infinite-scroll
